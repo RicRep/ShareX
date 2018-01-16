@@ -36,7 +36,7 @@ namespace ShareX
         public FirstTimeConfigForm()
         {
             InitializeComponent();
-            pbLogo.Image = ImageHelpers.ResizeImage(ShareXResources.Logo, 128, 128);
+            pbLogo.Image = ImageResizeHelpers.ResizeImage(ShareXResources.Logo, 128, 128);
             StartupTaskState state = StartupManagerFactory.StartupManager.State;
 
             cbRunStartup.Checked = state == StartupTaskState.Enabled;

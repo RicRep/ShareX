@@ -61,7 +61,7 @@ namespace ShareX.ImageEffectsLib
 
         public override Image Apply(Image img)
         {
-            return ImageHelpers.DrawCheckers(img, Size, Color, Color2);
+            return ImageDrawHelpers.DrawCheckers(img, Size, Color, Color2);
         }
     }
 }

@@ -73,7 +73,7 @@ namespace ShareX.HelpersLib
         {
             Graphics g = e.Graphics;
             Color color = (Color)e.Value;
-            ImageHelpers.DrawColorPickerIcon(g, color, e.Bounds);
+            ImageDrawHelpers.DrawColorPickerIcon(g, color, e.Bounds);
         }
     }
 }

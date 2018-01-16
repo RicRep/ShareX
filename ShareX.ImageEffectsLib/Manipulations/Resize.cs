@@ -64,7 +64,7 @@ namespace ShareX.ImageEffectsLib
                 return img;
             }
 
-            return ImageHelpers.ResizeImage(img, width, height);
+            return ImageResizeHelpers.ResizeImage(img, width, height);
         }
     }
 }

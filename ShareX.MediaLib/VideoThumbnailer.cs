@@ -212,7 +212,7 @@ namespace ShareX.MediaLib
                     if (Options.MaxThumbnailWidth > 0 && img.Width > Options.MaxThumbnailWidth)
                     {
                         int maxThumbnailHeight = (int)((float)Options.MaxThumbnailWidth / img.Width * img.Height);
-                        img = ImageHelpers.ResizeImage(img, Options.MaxThumbnailWidth, maxThumbnailHeight);
+                        img = ImageResizeHelpers.ResizeImage(img, Options.MaxThumbnailWidth, maxThumbnailHeight);
                     }
 
                     images.Add(img);

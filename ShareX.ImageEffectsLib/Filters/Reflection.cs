@@ -92,7 +92,7 @@ namespace ShareX.ImageEffectsLib
 
         public override Image Apply(Image img)
         {
-            return ImageHelpers.DrawReflection(img, Percentage, MaxAlpha, MinAlpha, Offset, Skew, SkewSize);
+            return ImageDrawHelpers.DrawReflection(img, Percentage, MaxAlpha, MinAlpha, Offset, Skew, SkewSize);
         }
     }
 }

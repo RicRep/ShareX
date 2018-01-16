@@ -74,8 +74,8 @@ namespace ShareX
 
             if (config.Image != null)
             {
-                config.Image = ImageHelpers.ResizeImageLimit(config.Image, size);
-                config.Image = ImageHelpers.DrawCheckers(config.Image);
+                config.Image = ImageResizeHelpers.ResizeImageLimit(config.Image, size);
+                config.Image = ImageDrawHelpers.DrawCheckers(config.Image);
                 size = new Size(config.Image.Width + 2, config.Image.Height + 2);
             }
             else if (!string.IsNullOrEmpty(config.Text))

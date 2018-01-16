@@ -49,7 +49,7 @@ namespace ShareX.ImageEffectsLib
             float widthPercentage = WidthPercentage <= 0 ? HeightPercentage : WidthPercentage;
             float heightPercentage = HeightPercentage <= 0 ? WidthPercentage : HeightPercentage;
 
-            return ImageHelpers.ResizeImageByPercentage(img, widthPercentage, heightPercentage);
+            return ImageResizeHelpers.ResizeImageByPercentage(img, widthPercentage, heightPercentage);
         }
     }
 }

@@ -73,10 +73,10 @@ namespace ShareX.ImageEffectsLib
         {
             if (UseGradient)
             {
-                return ImageHelpers.DrawBorder(img, Color, Color2, GradientType, Size, Type);
+                return ImageDrawHelpers.DrawBorder(img, Color, Color2, GradientType, Size, Type);
             }
 
-            return ImageHelpers.DrawBorder(img, Color, Size, Type);
+            return ImageDrawHelpers.DrawBorder(img, Color, Size, Type);
         }
     }
 }
